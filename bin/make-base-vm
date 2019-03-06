@@ -198,7 +198,7 @@ WORKDIR /home/$DISTRO
 CMD ["sleep", "infinity"]
 EOF
 
-  docker build --pull -f $OUT.Dockerfile -t $OUT .
+  podman build --pull -f $OUT.Dockerfile -t $OUT .
 
   exit 0
 fi

@@ -33,7 +33,7 @@ case $VMSW in
     rm var/target.vmname
     ;;
   DOCKER)
-    docker container stop gitian-target > /dev/null
-    docker container rm gitian-target > /dev/null
+    podman container stop gitian-target > /dev/null
+    podman container rm gitian-target > /dev/null
     ;;
 esac
